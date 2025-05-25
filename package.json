@@ -1,27 +1,38 @@
 {
-  "name": "midi-chord-detector",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.8"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.8",
-    "@eslint/eslintrc": "^3"
-  }
+	"name": "midi-chord-detector",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@spotify/basic-pitch": "^1.0.1",
+		"@tensorflow/tfjs-node": "^4.22.0",
+		"@tonaljs/tonal": "^4.10.0",
+		"@tonejs/midi": "^2.0.28",
+		"next": "15.1.8",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"standardized-audio-context": "^25.3.77"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "^3",
+		"@mapbox/node-pre-gyp": "^2.0.0",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"aws-sdk": "^2.1692.0",
+		"eslint": "^9",
+		"eslint-config-next": "15.1.8",
+		"mock-aws-s3": "^4.0.2",
+		"nock": "^14.0.4",
+		"null-loader": "^4.0.1",
+		"postcss": "^8",
+		"raw-loader": "^4.0.2",
+		"tailwindcss": "^3.4.1",
+		"typescript": "^5"
+	}
 }
