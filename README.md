@@ -20,6 +20,26 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Functionality
+
+This application, "MIDI Akkord-Detektor" (MIDI Chord Detector), analyzes musical files to detect and display a chord progression.
+
+### Supported File Types
+
+Users can upload two types of files:
+
+*   **MIDI Files:**
+    *   Directly supported formats: `.mid`, `.midi`.
+    *   These files are processed quickly as they already contain musical note data.
+
+*   **Audio Files (WAV only):**
+    *   Users can upload `.wav` audio files.
+    *   These audio files are first converted to MIDI data using the `@spotify/basic-pitch` library. The resulting MIDI is then analyzed for chords.
+    *   **Limitation:** Currently, only WAV (`.wav`) files are officially supported for audio input. While the file selection dialog may allow selecting other audio formats (e.g., `.mp3`, `.ogg`, `.flac`, `.aac`), these other formats will **not** be processed by the backend.
+    *   **Processing Time:** Please be aware that processing audio files may take significantly longer than processing MIDI files due to the audio-to-MIDI conversion step.
+
+The detected chord progression is then displayed to the user.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
