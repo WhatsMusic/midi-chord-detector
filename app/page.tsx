@@ -24,7 +24,7 @@ export default function Home() {
       <h1 className="text-3xl font-bold mb-6">MIDI Akkord-Detektor</h1>
       <input
         type="file"
-        accept=".mid,.midi"
+        accept=".mid,.midi,.wav,.mp3,.ogg,.aac,.flac"
         onChange={e => setFile(e.target.files?.[0] || null)}
         className="mb-4"
       />
